@@ -1,0 +1,141 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color: #732104;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+h2{
+  font-size: 2rem;
+  color: #732104;
+  font-weight: bold;
+  text-align: left;
+}
+
+h3{
+  font-size: 1rem;
+  color: #732104;
+  font-weight: bold;
+}
+
+#news{
+  text-align: left;
+  padding: 1rem;
+}
+
+#latestNews > img{
+  width: 100%;
+}
+
+.fotoDesc,
+#latestNews {
+  background-color: antiquewhite;
+
+  main {
+    text-align: center;
+  }
+
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+
+
+}
+ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+li {
+  margin: 5px;
+}
+
+.headerLinkShop {
+  width: 14rem;
+  height: 6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #FFDF7F;
+  font-weight: bold;
+  color: #732104;
+  background-image: url("/assets/imgs/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; 
+}
+
+.headerLink {
+  width: 8rem;
+  height: 3rem;
+  background-color: #FFDF7F;
+  font-weight: bold;
+  color: #732104;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.fotoDesc {  
+  background-color: #FEF7E2;
+  margin-bottom: 2rem;
+  border-radius: 40px;
+}
+.fotoDesc > img {
+  width: 100%;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+#addToCart{
+  border: none;
+  border-radius: 40px;
+  width: 8rem;
+  height: 2rem;
+  background-color: #FFDF7F;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 575px) {
+  h1, h2{
+    text-align: center;
+  }
+
+  
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #honey {
+    display: flex;
+  }
+  .fotoDesc {
+      width: 60%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #latestNews {
+      display: flex;
+      align-items: center;
+  }
+  #latestNews p,
+  #latestNews img {
+      flex: 1;
+  }
+
+  #honey {
+    display: flex;
+  }
+  .fotoDesc {
+      width: 50%;
+  }
+}
